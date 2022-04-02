@@ -42,9 +42,19 @@ body::before {
     background-position: center center;
     background-size: cover;
     position: absolute;
-    top: -15px;
-    left: -
+    top: -15vh;
+    left: -12vw;
+    transition: 0.4s ease ;
 
 }
 
-.sli
+.slide.active {
+    opacity: 1;
+}
+
+.arrow {
+    position: fixed;
+    background-color: transparent;
+    padding: 20px;
+    z-index: 100;
+}
