@@ -43,9 +43,9 @@ body::before {
     background-size: cover;
     position: absolute;
     top: -15vh;
-    left: -12vw;
+    left: -15vw;
     transition: 0.4s ease ;
-
+    z-index: 1;
 }
 
 .slide.active {
@@ -55,6 +55,25 @@ body::before {
 .arrow {
     position: fixed;
     background-color: transparent;
+    color: #fff;
+    cursor: pointer;
     padding: 20px;
     z-index: 100;
+    font-size: 30px;
+    border: solid 2px orange;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.arrow:focus {
+    outline: 0;
+}
+
+.left-arrow {
+    left: calc(15vw -65px);
+}
+
+.right-arrow {
+    right: calc(15vw -65px);
 }
